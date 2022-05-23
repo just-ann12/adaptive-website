@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:  #545354;
+}
+.companies-wrap,
+.offer-wrap,
+.purchase-price-wrap,
+.offer-benefits-wrap,
+.news-wrap,
+.footer-wrap{
+    margin-right: 20px;
+    margin-left:20px;
+}
+.companies,
+.section-about,
+.news-section,
+.purchase-price{
+    background-color: #FBF9FA;
+}
+a{
+    text-decoration: none;
+}
+
+.tittle{
+    border-bottom: 2px solid #65aa44;
+    border-left: 10px solid #65aa44;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    
+}
+.tittle h1{
+    font-weight: 500;
+    
+}
+.bold,
+.tittle h1,
+.new-content h3,
+.service-name{
+    color: #000;
+}
+
+
+/*header*/
+.header{
+    position: absolute;
+    width: 100%;
+}
+.navigation{
+    
+    /*display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;*/
+    list-style: none;
+    padding: 20px;
+    font-size: 0;
+}
+.navigation li:first-of-type {
+    margin-bottom: 30px;
+}
+.navigation li{
+    display: inline-block;
+    width: 33%;
+    font-size: 16px;
+    /*flex-basis: 33%;*/
+    text-align: center;
+}
+.navigation li a{
+    color:  #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*about*/
+.section-about{
+    background-image: url("../img/wheat.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 50vh;
+    width: 100%;
+    
+}
+.about-wrap{
+    
+    margin-right: 20px;
+    margin-left:20px;
+    padding-top: 170px;
+    
+}
+.about-wrap p{
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.about_button{
+    text-align: center;
+    
+}
+.about_button a{
+    margin: 0 auto;
+    color: black;
+    font-weight: 400;
+    border-left: 2px solid #65aa44;
+    border-right: 2px solid #65aa44;
+    padding: 10px 20px;
+}
+.about-yellow{
+    color: #e2ba7b;
+}
+
+/*companies*/
+.companies-wrap{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.companies-tittle{
+    font-weight: 700;
+    color:#65aa44;
+}
+.companies-wrap .tittle{
+    margin-bottom: 15px;
+}
+.companies-descr,
+.companies-tittle{
+    padding-bottom: 15px;
+}
+.companies-wrap .companies-descr:last-of-type{
+    margin-bottom: 0;
+}
+
+/*table*/
+.purchase-price{
+    display: none;
+}
+
+/*offer*/
+.offer-wrap{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.offer-descr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.services-p{
+    margin-bottom: 15px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.service-name{
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+
+/*offer-benefits*/
+.offer-benefits-list{
+    padding-inline-start: 35px;
+}
+.benefits-intro{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.offer-benefits-list li::marker{
+    color: #e2ba7b;
+}
+
+/*news*/
+.news-wrap{
+    padding-top: 15px;
+    
+}
+.news{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+    row-gap: 30px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.new{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0px 0px 12px 0px #D3D3D3;
+}
+.new:first-of-type{
+    margin-top: 10px;
+}
+
+.new-img img{
+    width: 100px;
+    height: 100%;
+}
+.new-content{
+    margin-left: 30px;
+}
+.new-content span{
+    font-style: italic;
+}
+/*footer*/
+.footer{
+    background-color: #f5f5f5;
+}
+.footer-wrap{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.contact-icon{
+    width: 25px;
+    margin-right: 10px;
+}
+.contact-icon:first-of-type{
+    margin-left: 5px;
+}
+.footer-info{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 10px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.footer-contact{
+   padding-bottom: 15px;
+}
+.bold{
+    font-weight: 700;
+    font-size: 16px;
+}
+.representation-info ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.main-office-info p:first-of-type{
+    margin-bottom: 20px;
+}
+.representation-in-sw-info p:first-of-type{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 17px;
+    }
+    
+    
+    .navigation{
+        display: flex;
+        margin-left: 160px;
+    }
+    .navigation li{
+        
+        width: 16%;
+        
+    }
+    
+    .navigation li a{
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .about-wrap{
+        width: 60%;
+        float: right;
+        margin-left: 0;
+    }
+        
+        
+    .about-wrap p,
+    .about_button{
+        text-align: left;
+    }
+    .about-wrap p{
+        font-size: 27px;
+    }
+    .about_button a{
+        
+        padding: 10px 50px;
+    }
+    /*.tittle h1{
+        font-size: 30px;
+    }*/
+    .companies-cols{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 25px;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .purchase-price{
+        display: block;
+    }
+    
+    .table{
+    width: 100%;
+    }
+    table, th{
+    border-collapse: collapse;
+    border: 2px solid #e2ba7b;
+    }
+    tr,
+    th{
+    padding: 5px;
+    }
+    tr.bold th{
+    font-weight: 700;
+    }
+    th.bold{
+    font-weight: 700;
+    }
+    th{
+    font-weight: 300;
+    }
+    .purchase-price-wrap{
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .price-descr:first-of-type{
+        margin: 15px 0;
+    }
+    .price-descr:last-of-type{
+        margin-top: 15px;
+    }
+
+    .offer-benefits-wrap{
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .new-content{
+        position: relative;
+        width: 100%;
+    }
+    .new-img img{
+        height: 100px;
+    }
+    .new-content .new-text{
+        position: absolute; 
+        bottom: 0;
+    }
+
+    .contact-icon{
+        width: 20px;
+        margin-right:2px;
+    }
+    .bold{
+        font-size: 20px;
+    }
+    .info{
+        grid-template-columns: 300px 1fr;
+    }
+
+}
+@media screen and (min-width: 992px){
+    body{
+        font-size: 16px;
+    }
+    .section-about{
+        height: 100vh;
+    }
+    .navigation li a{
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .about-wrap{
+        width: 50%;
+        padding-top: 15%;
+    }
+    .about-wrap{
+        margin: auto 20px;
+    }
+    .services{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .news{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        grid-template-rows: none;
+    }
+    .new-img img{
+        height: 100%;
+    }
+    .new-content{
+        position: static;
+    }
+    .new-content h3{
+        font-size: 16px;
+    }
+    .new-content .new-text{
+        position: static;
+    }
+    .new:first-of-type{
+        margin-top: 0;
+    }
+    .footer-wrap{
+        display: flex;
+    }
+    .footer-info{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .info{
+        grid-template-columns: 150px 1fr;
+    }
+    .footer-contact{
+        margin-right: 15px;
+    }
+    .contacts{
+        margin-bottom: 15px;
+    }
+    .contacts-icons{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        height: 100%;
+        margin: auto 0;
+    }
+    .contact-icon{
+        width: 30px;
+    }
+    .bold{
+        font-size: 18px;
+    }
+
+}
